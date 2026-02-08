@@ -368,10 +368,28 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <p class="footer-subscribe-title">Subscribe</p>
+          <form class="footer-subscribe-form">
+            <input
+              type="email"
+              name="email"
+              class="footer-subscribe-input"
+              placeholder="E-mail"
+              required
+            />
+            <button type="submit" class="footer-subscribe-btn">
+              Subscribe
+              <svg width="24" height="24" class="footer-subscribe-icon">
+                <use href="./images/icons.svg#icon-plain"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay ">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg height="8" width="8" class="form-close-icon">
@@ -386,7 +404,7 @@
             <div class="input-wrapper">
               <input type="text" id="user-name" name="user-name" class="form-input" required>
               <svg height="24px" width="18px" class="form-icon">
-                <use href="images/icons.svg#icon-name_person"></use>
+                <use href="./images/icons.svg#icon-name_person"></use>
               </svg>
             </div>
           </div>
@@ -397,7 +415,7 @@
             <div class="input-wrapper">
               <input type="tel" id="user-phone" name="user-phone" class="form-input" required>
               <svg height="24px" width="18px" class="form-icon">
-                <use href="images/icons.svg#icon-phone"></use>
+                <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
@@ -408,7 +426,7 @@
             <div class="input-wrapper">
               <input type="email" id="user-email" name="user-email" class="form-input" required>
               <svg height="24px" width="18px" class="form-icon">
-                <use href="images/icons.svg#icon-mail"></use>
+                <use href="./images/icons.svg#icon-mail"></use>
               </svg>
             </div>
           </div>
@@ -416,15 +434,15 @@
 
           <div class="form-field">
             <label for="comment" class="form-label"><span class="label-text">Comment</span></label>
-            <textarea id="comment" placeholder="Text input" class="form-textarea" required></textarea>
+            <textarea id="comment" placeholder="Text input" name="comment" class="form-textarea" required></textarea>
           </div>
 
           <div class="form-checkbox-wrapper">
-            <input type="checkbox" id="agreement" name="agreement" class="form-checkbox" value="true" required>
+            <input type="checkbox" id="agreement" name="agreement" class="form-checkbox visually-hidden" value="true" required>
              <label for="agreement" class="form-checkbox-label">
               <span class="custom-checkbox">
                 <svg width="16px" height="16px" class="checkbox-icon">
-                  <use href="images/icons.svg#icon-agree"></use>
+                  <use href="./images/icons.svg#icon-agree"></use>
                 </svg>
               </span>
               <span class="checkbox-text">I accept the terms and conditions of the  <a href="#" class="checkbox-a"> Privacy Policy</a>
