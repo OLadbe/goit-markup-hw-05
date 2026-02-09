@@ -195,8 +195,8 @@ img {
   color: #ffffff;
   cursor: pointer;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  max-width: 169px;
-  max-height: 56px;
+  min-width: 169px;
+  height: 56px;
   padding: 16px 32px;
   border-radius: 4px;
   text-align: center;
@@ -612,6 +612,7 @@ img {
   border: none;
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
   display: flex;
@@ -661,12 +662,13 @@ img {
 .modal {
   border-radius: 4px;
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   background-color: #FCFCFC;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
   overflow-y: auto;
   box-sizing: border-box;
   position: relative;
+  padding: 72px 24px 24px 24px;
 }
 
 .modal-close-btn {
@@ -699,7 +701,6 @@ img {
   text-align: center;
   margin-bottom: 16px;
   text-align: center;
-  margin-top: 72px;
   width: 360px;
   margin-left: auto;
   margin-right: auto;
@@ -715,13 +716,7 @@ img {
   fill: #fff;
 }
 
-.form {
-  padding-left: 26px;
-  padding-right: 26px;
-  display: flex;
-  flex-direction: column;
-  height: 336px;
-}
+
 
 .form-label {
   display: flex;
@@ -865,6 +860,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
+  color: #ffffff;
 }
 
 .form-submit-btn:hover,
